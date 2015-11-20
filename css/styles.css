@@ -140,7 +140,7 @@ section {
     }
 }
   
-#section1, #section3 {
+#section1 {
 	background-color: rgba(0,0,0,0.35);
 	color:#fff;
 	font-family: 'Bitter', serif;
