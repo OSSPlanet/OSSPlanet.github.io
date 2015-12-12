@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title>OSS Planet</title>
@@ -301,8 +301,21 @@
         -->
         <div class="row">
             <div class="col-sm-9">
-                <h3>Just email us with Title:</h3>
-                <strong>[OSSPlanet]</strong> ${Name_of_Your_Org_or_Project} ${Resource_Plan} <strong>Application</strong>
+                <div>
+                    
+                    Fill Applicant: <input type="text" name="applicant" value="Name_of_Your_Org_or_Project" ng-model="applicant" ng-init="applicant='Name_of_Your_Org_or_Project'"/> and 
+                    Plan: <input type="text" name="plan" value="Resource_Plan" ng-model="plan" ng-init="plan='Resource_Plan'"/><br>
+                    
+                    <h3>Just email us with this email Subject/Title:</h3>
+                    <div>
+                        <strong>[OSSPlanet]</strong> <strong>{{ applicant }}</strong> <strong>{{ plan }}</strong> <strong>Application</strong>
+                    </div>
+                </div>
+                <script>
+                    function ($scope) {
+                        $scope.applicant = 'Name_of_Your_Org_or_Project';
+                    }
+                </script>
                 <!--
                 <div class="row form-group">
                     <div class="col-sm-3">
@@ -352,6 +365,17 @@
                     P: (123) 456-7890
                 </address>
                 -->
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                Examples:<br>
+                <strong>[OSSPlanet] MozTW Hosting Application</strong><br>
+                - Application from Mozilla Taiwan Community, for Web Hosting requirements.<br>
+                <strong>[OSSPlanet] AnthonOS VPS Application</strong><br>
+                - Application from Anthon OS project, for it's main package building server.<br>
+                <strong>[OSSPlanet] Deepin Mirror Application</strong><br>
+                - Application from Deepin Linux project, for country mirror requirements.
             </div>
         </div>
     </div>
@@ -508,6 +532,7 @@
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     
     <script src="js/scripts.js"></script>
   </body>
