@@ -301,21 +301,40 @@
         -->
         <div class="row">
             <div class="col-sm-9">
-                <div>
-                    
-                    Fill Applicant: <input type="text" name="applicant" value="Name_of_Your_Org_or_Project" ng-model="applicant" ng-init="applicant='Name_of_Your_Org_or_Project'"/> and 
-                    Plan: <input type="text" name="plan" value="Resource_Plan" ng-model="plan" ng-init="plan='Resource_Plan'"/><br>
-                    
-                    <h3>Just email us with this email Subject/Title:</h3>
-                    <div>
-                        <strong>[OSSPlanet]</strong> <strong>{{ applicant }}</strong> <strong>{{ plan }}</strong> <strong>Application</strong>
+                <div class="row form-group">
+                    <h2>Step 1:</h2>
+                    Fill out the following information<br>
+                    <div class="col-sm-4">
+                        Project/Org Name: <input type="text" name="applicant" value="Project/Organization_Name" ng-model="applicant" ng-init="applicant='Project/Organization_Name'"/><br>
+                    </div>
+                    <div class="col-sm-7" ng-init="plan='Hosting'">
+                        Plan:<br>
+                        <input type="radio" name="plan" ng-model="plan" value="Hosting" checked="checked" />Hosting<br>
+                        <input type="radio" name="plan" ng-model="plan" value="Mirror" />Mirror<br>
+                        <input type="radio" name="plan" ng-model="plan" value="VPS" />VPS<br>
+                        <input type="radio" name="plan" ng-model="plan" value="Container" />Container<br>
                     </div>
                 </div>
-                <script>
-                    function ($scope) {
-                        $scope.applicant = 'Name_of_Your_Org_or_Project';
-                    }
-                </script>
+                <div class="row form-group">
+                    <h2>Step 2:</h2>
+                    <div>
+                        Send an email To: <strong>apply@ossplanet.net</strong> and CC: <strong>BlueT@BlueT.org</strong><br>
+                        Subject/Title: <strong>[OSSPlanet] {{ applicant }} Application for {{ plan }} Plan</strong><br>
+                        <br>
+                        Or Click <a href="mailto:apply@ossplanet.net,BlueT@BlueT.org?subject=[OSSPlanet]%20{{ applicant }}%20Application%20for%20{{ plan }}%20Plan" style="text-align:center;">HERE</a>
+                    </div>
+                    <br>
+                </div>
+                <div class="row form-group">
+                    <h3>Examples:</h3>
+                        <strong>[OSSPlanet] MozTW Hosting Application</strong><br>
+                        - Application from Mozilla Taiwan Community, for Web Hosting requirements.<br>
+                        <strong>[OSSPlanet] AnthonOS VPS Application</strong><br>
+                        - Application from Anthon OS project, for it's main package building server.<br>
+                        <strong>[OSSPlanet] Deepin Mirror Application</strong><br>
+                        - Application from Deepin Linux project, for country mirror requirements.
+                    
+                </div>
                 <!--
                 <div class="row form-group">
                     <div class="col-sm-3">
@@ -365,17 +384,6 @@
                     P: (123) 456-7890
                 </address>
                 -->
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                Examples:<br>
-                <strong>[OSSPlanet] MozTW Hosting Application</strong><br>
-                - Application from Mozilla Taiwan Community, for Web Hosting requirements.<br>
-                <strong>[OSSPlanet] AnthonOS VPS Application</strong><br>
-                - Application from Anthon OS project, for it's main package building server.<br>
-                <strong>[OSSPlanet] Deepin Mirror Application</strong><br>
-                - Application from Deepin Linux project, for country mirror requirements.
             </div>
         </div>
     </div>
