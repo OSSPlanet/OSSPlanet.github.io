@@ -46,13 +46,15 @@ loopHighlights(0)
 
 function loopHighlights(index) {
   if(order[index] == undefined) {
-      index = 0;
-    }
-  $media.hide()
-    $media.eq(order[index]).fadeIn(500)
-    setTimeout(function() {
-      loopHighlights(index + 1);
-    }, 5000)
+    index = 0;
+  }
+  var next = order[index + 1] == undefined ? 1 : index + 1;
+  $media.hide();
+  $media.eq(order[index]).fadeIn(500);
+  $media.eq(order[next]).fadeIn(500);
+  setTimeout(function() {
+    loopHighlights(index + 2);
+  }, 5000)
 }
 
 function shuffle(array) {
