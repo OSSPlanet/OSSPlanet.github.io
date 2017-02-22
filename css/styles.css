@@ -181,6 +181,10 @@ section {
 	padding-bottom:40px;
 }
 
+.highlights .media {
+  display: none;
+}
+
 footer {
 	background-color:#2b2b2b;
     color:#ddd;
