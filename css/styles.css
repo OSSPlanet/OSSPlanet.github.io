@@ -140,31 +140,31 @@ section {
     }
 }
   
-#section1 {
+#start {
 	background-color: rgba(0,0,0,0.35);
 	color:#fff;
 	font-family: 'Bitter', serif;
 }
   
-#section4 {
+#project {
 	background-color: #f6f6f6;
 	color:#444;
 }
   
-#section2 {
+#plan {
 	background-color: #fff;
 }
 
-#section3 {
+#datacenter {
 	background-color: rgba(0,0,0,0.9);
   color:#fff;
 }
 
-#section5 {
+#apply {
 	background-color: #fff;
 }
 
-#section6 {
+#about {
     background-color: #eee;
 /*
 	min-height:130px;
