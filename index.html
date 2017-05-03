@@ -287,39 +287,24 @@
 </section>
 
 <section id="apply">
+    <h1 class="text-center">Apply Now</h1>
+    <hr>
     <div class="container v-center">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Apply Now</h1>
-                <hr>
+            <div class="col-sm-3 pull-right">
+                <address>
+                    <strong>GitHub</strong><br>
+                    <a href="https://github.com/OSSPlanet/OSSPlanet">OSSPlanet</a>
+                </address>
+                <address>
+                    <strong>Email Us</strong><br>
+                    <a href="mailto:apply@ossplanet.net">apply@ossplanet.net</a><br>
+                    Backup address:<br>
+                    <a href="mailto:BlueT@BlueT.org">BlueT@BlueT.org</a><br>
+                    <br>
+                    (In case or mail lost, we suggest to send to both)
+                </address>
             </div>
-        </div>
-        <!--
-        <div>
-            * Brief intro about who you are (what role in what project/team, responsible for what).
-
-            * If it's a existing project, please provide a link to a page on project site (or othe possibly method) to verify your identity and proov that you or the contact person can represent the (sub-)project/team.
-
-            * 申請單位: Org name <http://url.of.the/project/>
-            * Brief intro: Project fullname and mission. The relationship to Open Source/Culture/Music (and contribution it's it's a existing project).
-            * Contact: name <email, hangout, twitter, etc> (can be more than one person)
-            * Resource you need:
-            Please describe and list down "How many, which kind (VM, web hosting, git hosting, mirror service, etc), usage (will it be what kind of function/role) and spec."
-            Please describe both the minimal and desired.
-            For slave mirror service, please also give us the source url, mirror frequecy, and other neccessary info.
-            * Any info not included above:
-
-            As this is a free service for Open Source/Culture/Music without asking almost nothing in return,
-            We will be encouraged if you can list as on your project site, or mention us on your news/blog/article.
-            And if it's ok for you, please let us know!
-
-            We are:
-            * BlueT - Matthew Lien - 練喆明 <BlueT@BlueT.org>
-            * Ubuntu Taiwan LoCo Team <http://Ubuntu-TW.org> (Chinese: Ubuntu 臺灣在地推廣組)
-            * Computer and Network Center of National ChiNan Univertity <http://www.cc.ncnu.edu.tw> (Chinese: 國立暨南國際大學 計算機與網路中心)
-        </div>
-        -->
-        <div class="row">
             <div class="col-sm-9">
                 <div class="row form-group">
                     <h2>Step 1:</h2>
@@ -327,36 +312,44 @@
                     <div class="col-sm-4">
                         Project/Org Name: <input type="text" name="applicant" placeholder="Project/Organization_Name" ng-model="applicant" ng-init="applicant='Project/Organization_Name'"/><br>
                     </div>
-                    <div class="col-sm-7" ng-init="plan='Web Hosting'">
+                    <div class="col-sm-7" ng-init="plan='Mirror'">
                         Plan:<br>
-                        <input type="radio" name="plan" ng-model="plan" value="Web Hosting" checked="checked" />Web Hosting<br>
-                        <input type="radio" name="plan" ng-model="plan" value="Mirror" />Mirror<br>
-                        <input type="radio" name="plan" ng-model="plan" value="VPS" />VPS<br>
-                        <input type="radio" name="plan" ng-model="plan" value="Container" />Container<br>
+                        <div class="col-sm-4">
+                            <input type="radio" name="plan" ng-model="plan" value="Mirror" checked="checked" />Mirror<br>
+                            <input type="radio" name="plan" ng-model="plan" value="VPS" />VPS<br>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="plan" ng-model="plan" value="Web Hosting" />Web Hosting<br>
+                            <input type="radio" name="plan" ng-model="plan" value="Container" />Container<br>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-sm-9">
                 <div class="row form-group">
                     <h2>Step 2:</h2>
-                    <div>
-                        Subject/Title: <strong>[OSSPlanet] {{ applicant }} Application for {{ plan }} Plan</strong><br>
-                        Copy <a href="https://github.com/OSSPlanet/OSSPlanet/blob/master/application-form.txt"><strong>Application Form Template</strong></a> and <strong>fill it</strong>.<br>
-                        Create issue or send Email:<br>
-                        <ul>
-                            <li>Create issue at <a href="https://github.com/OSSPlanet/OSSPlanet">OSSPlanet GitHub repo</a></li>
-                            <li>Send an email To: <a href="mailto:apply@ossplanet.net,BlueT@BlueT.org?subject=[OSSPlanet]%20{{ applicant }}%20Application%20for%20{{ plan }}%20Plan" style="text-align:center;"><strong>apply@ossplanet.net</strong> and CC: <strong>BlueT@BlueT.org</strong></a></li>
-                        </ul>
-                    </div>
-                    <br>
+                    Subject/Title: <strong>[OSSPlanet] {{ applicant }} Application for {{ plan }} Plan</strong><br>
+                    Copy <a href="https://github.com/OSSPlanet/OSSPlanet/blob/master/application-form.txt"><strong>Application Form Template</strong></a> and <strong>fill it</strong>.<br>
+                    Create issue or send Email:<br>
+                    <ul>
+                        <li>Create issue at <a href="https://github.com/OSSPlanet/OSSPlanet">OSSPlanet GitHub repo</a></li>
+                        <li>Send an email To: <a href="mailto:apply@ossplanet.net,BlueT@BlueT.org?subject=[OSSPlanet]%20{{ applicant }}%20Application%20for%20{{ plan }}%20Plan" style="text-align:center;"><strong>apply@ossplanet.net</strong> and CC: <strong>BlueT@BlueT.org</strong></a></li>
+                    </ul>
                 </div>
+            </div>
+            <div class="col-sm-9">
                 <div class="row form-group">
                     <h3>Examples:</h3>
-                        <strong>[OSSPlanet] MozTW Application for Web Hosting Plan</strong><br>
-                        - Application from Mozilla Taiwan Community, for Web Hosting requirements.<br>
-                        <strong>[OSSPlanet] AnthonOS Application for VPS Plan</strong><br>
-                        - Application from Anthon OS project, for it's main package building server.<br>
-                        <strong>[OSSPlanet] Deepin Application for Mirror Plan</strong><br>
-                        - Application from Deepin Linux project, for country mirror requirements.
-
+                    <div class="col-sm-12">
+                        <ul>
+                        <li><strong>[OSSPlanet] MozTW Application for Web Hosting Plan</strong><br>
+                        Application from Mozilla Taiwan Community, for Web Hosting requirements.<br></li>
+                        <li><strong>[OSSPlanet] AnthonOS Application for VPS Plan</strong><br>
+                        Application from Anthon OS project, for it's main package building server.<br></li>
+                        <li><strong>[OSSPlanet] Deepin Application for Mirror Plan</strong><br>
+                        Application from Deepin Linux project, for country mirror requirements.</li>
+                        </ul>
+                    </div>
                 </div>
                 <!--
                 <div class="row form-group">
@@ -388,28 +381,6 @@
                         <button class="btn btn-default btn-lg pull-right">Contact Us</button>
                     </div>
                 </div>
-                -->
-            </div>
-            <div class="col-sm-3 pull-right">
-                <address>
-                    <strong>GitHub</strong><br>
-                    <a href="https://github.com/OSSPlanet/OSSPlanet">OSSPlanet</a>
-                </address>
-                <address>
-                    <strong>Email Us</strong><br>
-                    <a href="mailto:apply@ossplanet.net">apply@ossplanet.net</a><br>
-                    Backup address:<br>
-                    <a href="mailto:BlueT@BlueT.org">BlueT@BlueT.org</a><br>
-                    <br>
-                    (In case or mail lost, we suggest to send to both)
-                </address>
-                <!--
-                <address>
-                    <strong>Some LLC</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    Newport, RI 94107<br>
-                    P: (123) 456-7890
-                </address>
                 -->
             </div>
         </div>
