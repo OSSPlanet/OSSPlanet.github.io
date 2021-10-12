@@ -6,7 +6,7 @@
 (If it's a existing project, please provide a link to a page on project site (or othe possibly method) to verify your identity and proof that you or the contact person can represent the (sub-)project/team.)
 
 * Applicant:
-(Org name <http://url.of.the/project/>)
+(Org name <https://url.of.the/project/>)
 
 * Project Info:
 (Brief intro)
@@ -32,5 +32,5 @@ And if it's ok for you, please let us know!
 We are:
 OSSPlanet
 * BlueT - Matthew Lien - 練喆明 <BlueT@BlueT.org>
-* Ubuntu Taiwan LoCo Team <http://Ubuntu-TW.org> (Chinese: Ubuntu 臺灣在地推廣組)
-* Computer and Network Center of National ChiNan Univertity <http://www.cc.ncnu.edu.tw> (Chinese: 國立暨南國際大學 計算機與網路中心)
+* Ubuntu Taiwan LoCo Team <https://Ubuntu-TW.org> (Chinese: Ubuntu 臺灣在地推廣組)
+* Computer and Network Center of National ChiNan Univertity <https://www.cc.ncnu.edu.tw> (Chinese: 國立暨南國際大學 計算機與網路中心)
